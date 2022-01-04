@@ -5,20 +5,23 @@ public class RNG {
     private int magicNumber;
     private int upperLimit;
 
-    public RNG(int upperLimit) {
-        this.upperLimit = upperLimit;
+    public RNG() {
+        setUpperLimit(upperLimit);
     }
 
     public String getString() {
-        String numberToString = Integer.toString(magicNumber);
-        return numberToString;
+        return Integer.toString(magicNumber);
     }
 
     public void setTheMagicNumber() {
         magicNumber = (int) (Math.random() * upperLimit);
     }
 
-    public int getUpperLimit() {
+    private int getUpperLimit() {
         return upperLimit;
+    }
+
+    public void setUpperLimit(int upperLimit) {
+        this.upperLimit = upperLimit;
     }
 }
