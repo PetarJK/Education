@@ -1,0 +1,1 @@
+This is simple exercise using some basic java logic. During my first month of learning java, a friend from work challenged me to write a simple "Guess" game for him.
