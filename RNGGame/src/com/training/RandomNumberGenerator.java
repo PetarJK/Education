@@ -1,11 +1,11 @@
 package com.training;
 
-public class RNG {
+public class RandomNumberGenerator {
 
     private int magicNumber;
     private int upperLimit;
 
-    public RNG() {
+    public RandomNumberGenerator() {
         setUpperLimit(upperLimit);
     }
 

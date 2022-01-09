@@ -4,7 +4,7 @@ public class GameLogic {
 
     private int attempts;
     private int upperLimit;
-    private RNG magicNumber = new RNG();
+    private RandomNumberGenerator magicNumber = new RandomNumberGenerator();
     private InputAndDialog gameDialog = new InputAndDialog();
 
     public GameLogic(int attempts, int upperLimit) {
@@ -21,7 +21,7 @@ public class GameLogic {
             magicNumber.setTheMagicNumber();
             String numberToString = magicNumber.getString();
             String userGuess = gameDialog.inputDialog(
-                    "Try to guess the magic number between 0 and " + upperLimit + ". You have " + attempts + ".");
+            "Try to guess the magic number between 0 and " + upperLimit + ". You have " + attempts + " attempts.");
             for (int i = 1; i < attempts; i++) {
                 if (userGuess.equals(numberToString)) {
                     gameDialog.dialog("WINNER WINNER CHICKEN DINER!");
