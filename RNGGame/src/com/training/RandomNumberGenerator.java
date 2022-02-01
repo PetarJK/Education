@@ -14,7 +14,7 @@ public class RandomNumberGenerator {
     }
 
     public void setTheMagicNumber() {
-        magicNumber = (int) (Math.random() * upperLimit);
+        magicNumber = (int) (Math.random() * (upperLimit + 1));
     }
 
     private int getUpperLimit() {
