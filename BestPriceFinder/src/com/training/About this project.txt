@@ -1,0 +1,2 @@
+A simple project simulating the process of getting quotes from flight service websites.
+The purpose of this project is to use asynchronous programming techniques with the help of the Executive framework and streams.
